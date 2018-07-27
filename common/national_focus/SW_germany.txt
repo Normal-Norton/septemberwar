@@ -1,0 +1,180 @@
+focus_tree = {
+	id = alt_german_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			tag = GER
+		}
+	}
+
+	focus = {
+		id = GER_wehrmacht
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 12
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = GER_heer
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 12
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = GER_wehrmacht }
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = GER_military_factories
+		icon = GFX_unknown
+		x = 12
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = GER_heer }
+		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GER_panzerwaffe
+		icon = GFX_unknown
+		x = 8
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = GER_heer }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = med_armor_bonus
+				ahead_reduction = 1
+				uses = 1
+				technology = basic_medium_tank
+			}
+		}
+	}
+
+	focus = {
+		id = GER_panzergrenadier
+		icon = GFX_unknown
+		x = 16
+		y = 3
+
+		prerequisite = { focus = GER_heer }
+	}
+
+	focus = {
+		id = GER_panzerkampfwagen_research
+		x = 10
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = GER_panzerwaffe }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = med_armor_bonus
+				bonus = 0.5
+				uses = 1
+				technology = basic_medium_tank
+			}
+		}
+	}
+
+	focus = {
+		id = GER_guderian_blitzkrieg
+		x = 14
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = GER_panzerwaffe }
+		prerequisite = { focus = GER_panzergrenadier }
+
+		completion_reward = {
+			army_experience = 15
+			create_corps_commander = {
+				name = "Heinz Guderian"
+				picture = "Portrait_Germany_Heinz_Guderian.dds"
+				traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
+				skill = 4
+				id = 6
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 3
+			}
+		}
+	}
+
+	focus = { #air section
+		id = GER_luftwaffe
+		icon = GFX_unknown
+		x = 4
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = GER_wehrmacht }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GER_expand_airfields
+		icon = GFX_unknown
+		x = 3
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = GER_luftwaffe }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GER_pilot_training
+		icon = GFX_unknown
+		x = 5
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = GER_luftwaffe }
+
+		completion_reward = {
+
+		}
+	}
+}

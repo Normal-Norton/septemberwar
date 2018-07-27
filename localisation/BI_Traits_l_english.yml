@@ -1,0 +1,23 @@
+﻿l_english:
+
+ #politicians
+ national_socialist_politician:0 "National Socialist Propogandist"
+ leninist_revolutionary:0 "Marxist-Leninist Revolutionary"
+ leftwing_radical:0 "Radical Leftist"
+ democratic_reformer:0 "Conservative Reformer"
+ social_liberal_reformer:0 "Social Liberal Reformer"
+ market_liberal_reformer:0 "Market Liberal Reformer"
+ social_democratic_reformer:0 "Social Democratic Reformer"
+ staunch_autocrat:0 "Autocratic Charmer"
+
+
+ national_socialism_drift:0 "National Socialist Drift"
+ leninist_drift:0 "Leninist Drift"
+ leftwingradical_drift:0 "Radical Leftist Drift"
+ neutrality_drift:0 "Autocracy Drift"
+ democratic_drift:0 "Conservative Drift"
+ social_liberal_drift:0 "Social Liberal Drift"
+ market_liberal_drift:0 "Market Liberal Drift"
+ social_democracy_drift:0 "Social Democracy Drift"
+    
+ 

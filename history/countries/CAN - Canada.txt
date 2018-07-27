@@ -1,0 +1,274 @@
+﻿capital = 276
+
+oob = "CAN_1936"
+
+set_research_slots = 3
+set_country_flag = monroe_doctrine
+set_stability = 0.8
+set_war_support = 0.1
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+}
+
+if = { 
+	limit = { NOT = { has_dlc = "Together for Victory" } }
+	set_cosmetic_tag = CAN_ALY
+}
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	add_ideas = CAN_great_depression_1
+	add_ideas = CAN_conscription_crisis
+	set_cosmetic_tag = CAN_UK
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+
+set_politics = {
+
+	parties = {
+		market_liberal = { 
+			popularity = 44.7
+		}
+
+		democratic = {
+			popularity = 33.9
+		}
+		
+		social_democracy = {
+			popularity = 8.8
+		}
+
+		social_liberal = {
+			popularity = 2.05
+		}
+
+		social_liberal = {
+			popularity = 8.7
+		}
+
+		communism = {
+			popularity = 1.85
+		}
+	}
+	
+	ruling_party = market_liberal
+	last_election = "1935.10.14"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Mackenzie King"
+	desc = "POLITICS_MACKENZIE_KING_DESC"
+	picture = "gfx/leaders/CAN/Portrait_Canada_Mackenzie_King.dds"
+	expire = "1965.1.1"
+	ideology = market_liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Adrien Arcand"
+	desc = "POLITICS_ADRIEN_ARCAND_DESC"
+	picture = "gfx/leaders/CAN/Portrait_Canada_Adrien_Arcand.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Tim Buck"
+	desc = "POLITICS_TIM_BUCK_DESC"
+	picture = "gfx/leaders/CAN/Portrait_Canada_Tim_Buck.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Arthur Puttee"
+	desc = "POLITICS_TIM_BUCK_DESC"
+	picture = "gfx/leaders/CAN/Portrait_Canada_Arthur_Puttee.dds"
+	expire = "1965.1.1"
+	ideology = leftwingradical_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "James Shaver Woodsworth"
+	desc = "POLITICS_JS_WOODSWORTH_DESC"
+	picture = "gfx/leaders/CAN/Portrait_Canada_James_Shaver_Woodsworth.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Robert Forke"
+	desc = "POLITICS_FORKE_DESC"
+	picture = "gfx/leaders/CAN/Portrait_Canada_Robert_Forke.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Richard Bedford Bennett"
+	desc = "POLITICS_RB_BENNETT_DESC"
+	picture = "gfx/leaders/CAN/Portrait_Canada_Richard_Bedford_Bennett.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Henry Herbert Stevens"
+	desc = "POLITICS_HH_STEVENS_DESC"
+	picture = "gfx/leaders/CAN/Portrait_Canada_Henry_Herbert_Stevens.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "William Kashtan"
+	desc = "POLITICS_WILLIAM_KASHTAN_DESC"
+	picture = "gfx/leaders/CAN/Portrait_Canada_William_Kashtan.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+set_convoys = 100
+set_stability = 0.75
+
+
+create_corps_commander = {
+	name = "Thomas Victor Anderson"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  }
+	skill = 4
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 5
+}
+
+create_field_marshal = {
+	name = "Charles Foulkes"
+	gfx = "GFX_CAN_charles_foulkes"
+	traits = { }
+	skill = 4
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "John Montague"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { }
+	skill = 3
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Bert Hoffmeister"
+	gfx = "GFX_CAN_bert_hoffmeister"
+	traits = { hill_fighter }
+	skill = 4
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Leonard W. Murray"
+	gfx = "GFX_CAN_leonard_warren_murray"
+	traits = { }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "H.T. Baillie-Grohman"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	traits = { spotter }
+	skill = 4
+}
+create_navy_leader = {
+	name = "James D. Prentice"
+	gfx = "GFX_CAN_james_prentice"
+	traits = { spotter }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Harry DeWolf"
+	gfx = "GFX_CAN_harry_dewolf"
+	traits = { superior_tactician }
+	skill = 4
+}
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "Sanguenay Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 1
+		ship_ASW_upgrade = 1
+		ship_anti_air_upgrade = 1
+	}
+}
+
+1939.1.1 = {
+	create_equipment_variant = {
+		name = "Athabaskan Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 2
+			destroyer_engine_upgrade = 2
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 2
+		}
+	}
+}

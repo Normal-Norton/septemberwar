@@ -1,0 +1,508 @@
+﻿###########################
+# Canadian TFV events Events
+###########################
+
+add_namespace = canada_elections
+
+country_event = {
+	id = canada_elections.1
+	title = canada_elections.1.t
+	desc = canada_elections.1.d
+	picture = GFX_report_event_usa_election_generic
+
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = CAN
+		has_government = democratic
+		has_government = social_liberal
+		has_government = market_liberal
+		has_government = social_democracy
+	}
+
+	#marketliberals
+	option = {
+		name = canada_elections.1.a
+
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.51
+		}
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.3
+		}
+
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.08
+		}
+		
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+
+
+		create_country_leader = {
+			name = "Mackenzie King"
+			desc = "POLITICS_MACKENZIE_KING_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Mackenzie_King.dds"
+			expire = "1965.1.1"
+			ideology = market_liberalism
+			traits = {
+			#}
+		}
+
+		create_country_leader = {
+			name = "Robert Manion"
+			desc = "POLITICS_ROBERT_MANION_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Robert_Manion.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			#}
+		}
+		create_country_leader = {
+			name = "James Shaver Woodsworth"
+			desc = "POLITICS_JS_WOODSWORTH_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_James_Shaver_Woodsworth.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+			}
+		}
+		
+	}
+
+	# New Government
+	option = {
+		name = canada_elections.1.b
+
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.51
+		}
+
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.3
+		}
+
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.08
+		}
+
+
+		create_country_leader = {
+			name = "Robert Manion"
+			desc = "POLITICS_ROBERT_MANION_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Robert_Manion.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			#}
+		}
+
+		
+
+		create_country_leader = {
+			name = "James Shaver Woodsworth"
+			desc = "POLITICS_JS_WOODSWORTH_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_James_Shaver_Woodsworth.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+				#
+			}
+		}
+		
+		create_country_leader = {
+			name = "Mackenzie King"
+			desc = "POLITICS_MACKENZIE_KING_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Mackenzie_King.dds"
+			expire = "1965.1.1"
+			ideology = market_liberalism
+			traits = {
+			}
+		}
+	}
+	
+	
+	# New Democracy
+	option = {
+		name = canada_elections.1.c
+
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.51
+		}
+
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.3
+		}
+
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.08
+		}
+
+		set_party_name = { ideology = democratic long_name = CAN_new_democracy_party_long name = CAN_new_democracy_party }	
+
+		create_country_leader = {
+			name = "William Duncan Herridge"
+			desc = "POLITICS_WD_HERRIDGE_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_William_Duncan_Herridge.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			#}
+		}
+
+
+		create_country_leader = {
+			name = "James Shaver Woodsworth"
+			desc = "POLITICS_JS_WOODSWORTH_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_James_Shaver_Woodsworth.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+				#
+			}
+		}
+
+		create_country_leader = {
+			name = "Mackenzie King"
+			desc = "POLITICS_MACKENZIE_KING_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Mackenzie_King.dds"
+			expire = "1965.1.1"
+			ideology = market_liberalism
+			traits = {
+			#}
+		}
+	}
+
+	#CCF
+	option = {
+		name = canada_elections.1.e
+
+		set_politics = {
+			ruling_party = social_democracy
+			elections_allowed = yes
+		}
+
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.51
+		}
+
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.3
+		}
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.08
+		}
+
+		create_country_leader = {
+			name = "James Shaver Woodsworth"
+			desc = "POLITICS_JS_WOODSWORTH_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_James_Shaver_Woodsworth.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+				#
+			}
+		}
+
+		create_country_leader = {
+			name = "Robert Manion"
+			desc = "POLITICS_ROBERT_MANION_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Robert_Manion.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			#}
+		}
+
+		create_country_leader = {
+			name = "Mackenzie King"
+			desc = "POLITICS_MACKENZIE_KING_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Mackenzie_King.dds"
+			expire = "1965.1.1"
+			ideology = market_liberalism
+			traits = {
+			#}
+		}
+	}
+}
+
+######1945
+country_event = {
+	id = canada_elections.2
+	title = canada_elections.2.t
+	desc = canada_elections.2.d
+	picture = GFX_report_event_usa_election_generic
+
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = CAN
+		has_government = democratic
+		has_government = social_liberal
+		has_government = market_liberal
+		has_government = social_democracy
+	}
+
+	#marketliberals
+	option = {
+		name = canada_elections.2.a
+
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.39
+		}
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.27
+		}
+
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.15
+		}
+		
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+
+
+		create_country_leader = {
+			name = "Mackenzie King"
+			desc = "POLITICS_MACKENZIE_KING_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Mackenzie_King.dds"
+			expire = "1965.1.1"
+			ideology = market_liberalism
+			traits = {
+			#}
+		}
+
+		create_country_leader = {
+			name = "John Bracken"
+			desc = "POLITICS_ROBERT_MANION_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_John_Bracken.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			#}
+		}
+
+		create_country_leader = {
+			name = "Major James Coldwell"
+			desc = "POLITICS_JS_WOODSWORTH_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Major_James_Coldwell.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+			}
+		}
+
+		set_party_name = { ideology = democratic long_name = CAN_progressive_conservative_party_long name = CAN_progressive_conservative_party }	
+		
+	}
+
+	# Progressive
+	option = {
+		name = canada_elections.2.b
+
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.39
+		}
+
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.27
+		}
+
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.15
+		}
+
+
+		create_country_leader = {
+			name = "John Bracken"
+			desc = "POLITICS_ROBERT_MANION_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_John_Bracken.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			#}
+		}
+
+		
+
+		create_country_leader = {
+			name = "Major James Coldwell"
+			desc = "POLITICS_JS_WOODSWORTH_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Major_James_Coldwell.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+			}
+		}
+		
+		create_country_leader = {
+			name = "Mackenzie King"
+			desc = "POLITICS_MACKENZIE_KING_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Mackenzie_King.dds"
+			expire = "1965.1.1"
+			ideology = market_liberalism
+			traits = {
+			}
+		}
+
+		set_party_name = { ideology = democratic long_name = CAN_progressive_conservative_party_long name = CAN_progressive_conservative_party }	
+	}
+	
+	
+	# Social Democrats
+	option = {
+		name = canada_elections.2.c
+
+		set_politics = {
+			ruling_party = social_democracy
+			elections_allowed = yes
+		}
+
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.39
+		}
+
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.27
+		}
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+
+		set_party_name = { ideology = democratic long_name = CAN_progressive_conservative_party_long name = CAN_progressive_conservative_party }	
+
+		create_country_leader = {
+			name = "John Bracken"
+			desc = "POLITICS_ROBERT_MANION_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_John_Bracken.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			#}
+		}
+
+
+		create_country_leader = {
+			name = "Major James Coldwell"
+			desc = "POLITICS_JS_WOODSWORTH_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Major_James_Coldwell.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+			}
+		}
+
+		create_country_leader = {
+			name = "Mackenzie King"
+			desc = "POLITICS_MACKENZIE_KING_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Mackenzie_King.dds"
+			expire = "1965.1.1"
+			ideology = market_liberalism
+			traits = {
+			#}
+		}
+	}
+
+	#SC
+	option = {
+		name = canada_elections.2.e
+
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.39
+		}
+
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.27
+		}
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+
+		set_party_name = { ideology = democratic long_name = CAN_social_credit_party_long name = CAN_social_credit_party }
+
+		create_country_leader = {
+			name = "Major James Coldwell"
+			desc = "POLITICS_JS_WOODSWORTH_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Major_James_Coldwell.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+			}
+		}
+
+		create_country_leader = {
+			name = "Solon Earl Low"
+			desc = "POLITICS_ROBERT_MANION_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Solon_Earl_Low.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			#}
+		}
+
+		create_country_leader = {
+			name = "Mackenzie King"
+			desc = "POLITICS_MACKENZIE_KING_DESC"
+			picture = "gfx/leaders/CAN/Portrait_Canada_Mackenzie_King.dds"
+			expire = "1965.1.1"
+			ideology = market_liberalism
+			traits = {
+			#}
+		}
+	}
+}
