@@ -1,0 +1,23 @@
+﻿l_english:
+
+#eventd
+geneco.1.t:0 "National Industry Investment"
+geneco.1.desc:0 ""
+geneco.1.a:0 "Small Investment"
+geneco.1.b:0 "Medium Investment"
+geneco.1.c:0 "Big Investment"
+geneco.2.t:0 "New Factoreis Opened"
+geneco.2.desc:0 ""
+geneco.2.a:0 "Excellent"
+geneco.3.t:0 "New Factoreis Opened"
+geneco.3.desc:0 ""
+geneco.3.a:0 "Excellent"
+geneco.4.t:0 "New Factoreis Opened"
+geneco.4.desc:0 ""
+geneco.4.a:0 "Excellent"
+
+
+#decisions
+internal affairs decsions:0 "Internal Affairs Decsions"
+investinnationalindustry:0 "Invest in National Industry"
+investinnationalindustry_desc:0 "Its time to make an investment into Civilian Industry"

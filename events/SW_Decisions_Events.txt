@@ -1,0 +1,146 @@
+﻿add_namespace = geneco
+
+# Invest in National Research
+country_event = {
+	id = geneco.1
+	title = geneco.1.t
+	desc = geneco.1.desc
+	picture = GFX_report_event_hitler_handshake
+
+	is_triggered_only = yes
+
+	option = { #Basic Investment
+		name = geneco.1.a
+
+		if = { num_of_available_civilian_factories > 1 }
+
+		random_owned_state = {
+			remove_building = { type = industrial_complex level = 1 }
+		}
+
+
+		ROOT = { country_event = { days = 80 id = geneco.2 } }
+	}
+
+	option = { #Medium Investment
+		name = geneco.1.b
+
+		if = { num_of_available_civilian_factories > 2 }
+
+		random_owned_state = {
+			remove_building = { type = industrial_complex level = 2 }
+		}
+
+
+		ROOT = { country_event = { days = 90 id = geneco.3 } }
+	}
+
+	option = { #Big Investment
+		name = geneco.1.c
+
+		if = { num_of_available_civilian_factories > 3 }
+
+		random_owned_state = {
+			remove_building = { type = industrial_complex level = 3 }
+		}
+		
+
+		ROOT = { country_event = { days = 100 id = geneco.4 } }
+	}
+}
+
+
+country_event = {
+	id = geneco.2
+	title = geneco.2.t
+	desc = geneco.2.desc
+
+	is_triggered_only = yes
+
+	option = { #Basic Investment
+		name = geneco.2.a
+
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+	}	
+}
+
+country_event = {
+	id = geneco.3
+	title = geneco.3.t
+	desc = geneco.3.desc
+
+	is_triggered_only = yes
+
+	option = { #Medium Investment
+		name = geneco.3.a
+
+		random_owned_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		random_owned_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geneco.4
+	title = geneco.4.t
+	desc = geneco.4.desc
+
+	is_triggered_only = yes
+
+	option = { #Big Investment
+		name = geneco.4.a
+
+		
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

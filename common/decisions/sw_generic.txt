@@ -1,0 +1,21 @@
+#Decision for: Invest in National Industry
+internal_affairs_decsions = {
+
+
+	investinnationalindustry = {
+		icon = decision_category_generic_industry
+		available = {
+			num_of_available_civilian_factories > 1
+		}
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			ROOT = { country_event = { hours = 1 id = geneco.1 } }
+		}
+		cost = 50
+		days_re_enable = 182
+	}
+}
